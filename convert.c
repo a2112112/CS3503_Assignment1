@@ -1,3 +1,6 @@
+#include <stdint.h>
+#include <stdio.h>
+
 void div_convert(uint32_t n, int base, char *out) {
    char temp[65]; // Temporary buffer
    int pos = 0;
@@ -15,9 +18,9 @@ void div_convert(uint32_t n, int base, char *out) {
 
       // Convert digit to character
       if (remainder < 10)
-         temp[pos++] = ’0’ + remainder;
+         temp[pos++] = '0' + remainder;
       else
-         temp[pos++] = ’A’ + (remainder- 10);
+         temp[pos++] = 'A' + (remainder- 10);
    }
 
    // Reverse the result
