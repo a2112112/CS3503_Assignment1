@@ -1,3 +1,8 @@
+#include <stdint.h>
+#include <stdio.h>
+
+void div_convert(uint32_t n, int base, char *out);
+
 void print_tables(uint32_t n) {
    char bin[33], oct[12], hex[9];
 
