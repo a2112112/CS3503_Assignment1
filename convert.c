@@ -57,6 +57,7 @@ void sub_convert(uint32_t n, int base, char* out) {
 
     while (power > 0) {
       unsigned digit = (unsigned)(n / power);
+      
       if (digit != 0 || startFlag) {
          out[pos++] = convertDigit(digit);
          startFlag = 1;

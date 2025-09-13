@@ -31,11 +31,6 @@ int main() {
       char expectedStr[50];
       char format[50];
 
-         // Check if the line starts with '#' or is empty
-         if (line[0] == '#' || is_empty_line(line)) {
-            continue; // Skip this line
-         }
-
          if (sscanf(line, "%s %u %u %s", func, &parameter, &base, &expectedStr) == 4) {
             if (strcmp(func, "div_convert") == 0) {
                div_convert(parameter, base, output);
